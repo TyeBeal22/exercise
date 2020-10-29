@@ -1,0 +1,25 @@
+
+
+
+const personOne = {
+  name: 'yoshi',
+  speak: function(){
+    console.log('my name is ', this.name)
+    }
+   }
+   
+   
+ 
+ const personTwo = {
+  name: 'yoshi',
+  speak: () => {
+    console.log('my name is ' , this.name)
+    }
+   }
+   
+   
+   
+ personOne.speak()
+ // personTwo will be undefined due to arrow function not binding to function
+ 
+ 
