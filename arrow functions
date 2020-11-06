@@ -23,3 +23,8 @@ const personOne = {
  // personTwo will be undefined due to arrow function not binding to function
  
  
+const names = ['Tye','Markel','Beal','Jim','Brown','Maximus']
+
+const filteredNames = names.filter((name) => {
+    return name.length > 4
+})
